@@ -13,6 +13,9 @@
 		046E85E91F44593900A0ED9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046E85E71F44593900A0ED9A /* Main.storyboard */; };
 		046E85EB1F44593900A0ED9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046E85EA1F44593900A0ED9A /* Assets.xcassets */; };
 		046E85EE1F44593900A0ED9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046E85EC1F44593900A0ED9A /* LaunchScreen.storyboard */; };
+		046E85F81F44598F00A0ED9A /* RuntimeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E85F71F44598F00A0ED9A /* RuntimeClass.m */; };
+		046E85FB1F4459A400A0ED9A /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E85FA1F4459A400A0ED9A /* RuntimeKit.m */; };
+		046E85FE1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E85FD1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		046E85EA1F44593900A0ED9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046E85ED1F44593900A0ED9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046E85EF1F44593900A0ED9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046E85F61F44598F00A0ED9A /* RuntimeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeClass.h; sourceTree = "<group>"; };
+		046E85F71F44598F00A0ED9A /* RuntimeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeClass.m; sourceTree = "<group>"; };
+		046E85F91F4459A400A0ED9A /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
+		046E85FA1F4459A400A0ED9A /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
+		046E85FC1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RuntimeClass+MethodSwap.h"; sourceTree = "<group>"; };
+		046E85FD1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RuntimeClass+MethodSwap.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		046E85DD1F44593900A0ED9A /* RuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				046E85F51F44596400A0ED9A /* Runtime */,
 				046E85E11F44593900A0ED9A /* AppDelegate.h */,
 				046E85E21F44593900A0ED9A /* AppDelegate.m */,
 				046E85E41F44593900A0ED9A /* ViewController.h */,
@@ -77,6 +87,19 @@
 				046E85DF1F44593900A0ED9A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046E85F51F44596400A0ED9A /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				046E85F91F4459A400A0ED9A /* RuntimeKit.h */,
+				046E85FA1F4459A400A0ED9A /* RuntimeKit.m */,
+				046E85F61F44598F00A0ED9A /* RuntimeClass.h */,
+				046E85F71F44598F00A0ED9A /* RuntimeClass.m */,
+				046E85FC1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.h */,
+				046E85FD1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				046E85E61F44593900A0ED9A /* ViewController.m in Sources */,
+				046E85FE1F4468FA00A0ED9A /* RuntimeClass+MethodSwap.m in Sources */,
+				046E85FB1F4459A400A0ED9A /* RuntimeKit.m in Sources */,
 				046E85E31F44593900A0ED9A /* AppDelegate.m in Sources */,
 				046E85E01F44593900A0ED9A /* main.m in Sources */,
+				046E85F81F44598F00A0ED9A /* RuntimeClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +340,7 @@
 				046E85F41F44593900A0ED9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
