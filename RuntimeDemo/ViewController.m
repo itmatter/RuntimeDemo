@@ -10,6 +10,10 @@
 #import "RuntimeKit.h"
 #import "RuntimeClass.h"
 #import "RuntimeClass+MethodSwap.h"
+#import "Son.h"
+
+//关于runtime比较好博客
+static NSString *runtimeBlog = @"http://www.jianshu.com/p/9d649ce6d0b8";
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UITextView *infoTF;
@@ -85,14 +89,21 @@
 
 - (IBAction)addProperty:(id)sender {
     
-    
+    Son *son = [[Son alloc]init];
+    [son question2];
     
 }
 
 - (void)addNewMethod_A {
     NSLog(@"addNewMethod_A");
+    
 }
 
 
 
 @end
+
+
+
+
+
